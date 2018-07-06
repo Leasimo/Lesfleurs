@@ -7,21 +7,87 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="navbar">
+    <img src="images/Airbnb.png" alt="" class="logo">
+    <div class="menu">
+     <div class="link">
+      <a href="#">All cities</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Press</a>  
+     </div> 
+    <img src="images/Léa.jpg" alt="" class="avatar">
+    </div>
 
-  <div id="map"></div>
+  </div>
 
-  <script>
-    var map;
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 48.866667, lng: 2.333333},
-        zoom: 8
-      });
-    }
-  </script>
+  <div class="page-container">
+    <div class="results">
+      <div class="cards">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%), url(https://kitt.lewagon.com/placeholder/cities/paris)">
+          <h3>
+            Paris
+          </h3>
+        </div>
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%), url(https://kitt.lewagon.com/placeholder/cities/rio)">
+          <h3>
+            Rio
+          </h3>
+        </div>
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%), url(https://kitt.lewagon.com/placeholder/cities/buenos-aires)">
+          <h3>
+            Buenos Aires
+          </h3>
+        </div>
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%), url(https://kitt.lewagon.com/placeholder/cities/paris)">
+          <h3>
+            Paris
+          </h3>
+        </div>
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%), url(https://kitt.lewagon.com/placeholder/cities/rio)">
+          <h3>
+            Rio
+          </h3>
+        </div>
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%), url(https://kitt.lewagon.com/placeholder/cities/buenos-aires)">
+          <h3>
+            Buenos Aires
+          </h3>
+        </div><div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%), url(https://kitt.lewagon.com/placeholder/cities/paris)">
+          <h3>
+            Paris
+          </h3>
+        </div>
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%), url(https://kitt.lewagon.com/placeholder/cities/rio)">
+          <h3>
+            Rio
+          </h3>
+        </div>
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 40%), url(https://kitt.lewagon.com/placeholder/cities/buenos-aires)">
+          <h3>
+            Buenos Aires
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div id="map">
+      <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 48.866667, lng: 2.333333},
+          zoom: 8
+        });
+      }
+      </script>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-  async defer></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async defer></script>
+  </div>
+
+  
+  </div>
+
+  
 
 </body>
 </html>
